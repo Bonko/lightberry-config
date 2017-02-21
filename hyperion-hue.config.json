@@ -1,0 +1,11 @@
+"device" :
+  {
+    "name"       : "MyPi",
+    "type"       : "philipshue",
+    "output"     : "<hue-ip>",
+    "username"   : "your-username-goes-here",
+    "colorOrder" : "rgb",
+    "switchOffOnBlack" : false,
+    "lightIds"   : [1,2]
+  }
+
