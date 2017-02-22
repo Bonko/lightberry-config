@@ -3,7 +3,7 @@
     "name"       : "MyPi",
     "type"       : "philipshue",
     "output"     : "<hue-ip>",
-    "username"   : "your-username-goes-here",
+    "username"   : "<hue-username>",
     "colorOrder" : "rgb",
     "switchOffOnBlack" : false,
     "lightIds"   : [1,2]
