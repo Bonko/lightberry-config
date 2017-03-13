@@ -1,0 +1,15 @@
+[Unit]
+Description=Hue Control via HTTP
+Requires=network-online.service
+After=network-online.service
+
+[Service]
+Restart=on-failure
+SyslogIdentifier=hue-control
+ExecStartPre=/usr/bin/mkdir -p /storage/bin
+ExecStartPre=/usr/bin/curl -Lo /storage/bin/hue-control \
+             https://github.com/Bonko/hue-control/releases/download/v0.1/hue-control_arm
+ExecStartPre=/bin/chmod 0755 /storage/bin/hue-control
+ExecStart=/storage/bin/hue-control
+[Install]
+WantedBy=multi-user.target
