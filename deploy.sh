@@ -1,6 +1,6 @@
 #!/bin/sh
 
-config=hyperion-hue.config.json
+config=hyperion.config.json
 
 source ./vars
 
